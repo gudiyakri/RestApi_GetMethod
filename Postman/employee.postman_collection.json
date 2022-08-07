@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "af51ae80-8067-4d26-9b15-2680b581b404",
+		"name": "employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "19798639"
+	},
+	"item": [
+		{
+			"name": "Fetch_data_GetMethod",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"ABC\",\r\n    \"sex\":\"M\",\r\n    \"client_name\":\"FedEx\",\r\n    \"total_sales\":\"1500000\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3005/api/read"
+			},
+			"response": [
+				{
+					"name": "Fetch_data_GetMethod",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"ABC\",\r\n    \"sex\":\"M\",\r\n    \"client_name\":\"FedEx\",\r\n    \"total_sales\":\"1500000\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3005/api/read"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "246"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f6-Qfrh+nr12A2rkQxmUkNVGhsRm9o\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 07 Aug 2022 10:53:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"first_name\": \"Michael\",\n        \"sex\": \"M\",\n        \"client_name\": \"Lackawana Country\",\n        \"total_sales\": 267000\n    },\n    {\n        \"first_name\": \"Michael\",\n        \"sex\": \"M\",\n        \"client_name\": \"FedEx\",\n        \"total_sales\": 15000\n    },\n    {\n        \"first_name\": \"Stanley\",\n        \"sex\": \"M\",\n        \"client_name\": \"FedEx\",\n        \"total_sales\": 130000\n    }\n]"
+				}
+			]
+		}
+	]
+}
